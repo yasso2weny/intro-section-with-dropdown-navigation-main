@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <nav id="nav-bar">
+
+    <img src="images/logo.svg" alt="logo">
+  
+      <div class="dropdown">
+        <button class="dropbtn">Features <img class="arrow-down" src="images/icon-arrow-down.svg" alt=""> <img class="arrow-up" src="images/icon-arrow-up.svg" alt=""></button>
+          <div class="dropdown-content">
+            <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-todo.svg" alt=""></picture><a href="">Todo List</a></div>
+            <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-calendar.svg" alt=""><a href=""></picture>Calendar</a></div>
+            <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-reminders.svg" alt=""></picture><a href="">Reminders</a></div>
+            <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-planning.svg" alt=""></picture><a href="">Planning</a></div>
+          </div>
+      </div>
+  
+      <div class="dropdown">
+        <button class="dropbtn">Company <img class="arrow-down" src="images/icon-arrow-down.svg" alt=""> <img class="arrow-up" src="images/icon-arrow-up.svg" alt=""></button>
+        <div class="dropdown-content company">
+          <div class="dropdown-content-flex"><a href="">History</a></div>
+          <div class="dropdown-content-flex"><a href="">Our Team</a></div>
+          <div class="dropdown-content-flex"><a href="">Blog</a></div>
+        </div>
+      </div>
+  
+      <a href="">Careers</a>
+      <a href="">About</a>
+  
+      <span>
+        <a href="">Login</a>
+        <a id="register-btn" href="">Register</a>
+      </span>
+
+  </nav>
+<!-- Mobile Hamburger Menu -->
+  <nav id="mobile-navbar-container">
+
+    <div id="mobile-navbar">
+
+      <picture><img src="images/logo.svg" alt="logo"></picture>
+
+      <div id="mobile-navbar-lines">
+        <div class="hbm-line"></div>
+        <div class="hbm-line"></div>
+        <div class="hbm-line"></div>
+    </div>
+
+    </div>
+
+    <div id="hbm-wrapper">
+      <div id="hbm-container">
+        <div id="close-hbm-wrapper">
+          <div class="close-hbm-wrapper-line"></div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Features <img class="arrow-down" src="images/icon-arrow-down.svg" alt=""> <img class="arrow-up" src="images/icon-arrow-up.svg" alt=""></button>
+            <div class="dropdown-content">
+              <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-todo.svg" alt=""></picture><a href="">Todo List</a></div>
+              <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-calendar.svg" alt=""><a href=""></picture>Calendar</a></div>
+              <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-reminders.svg" alt=""></picture><a href="">Reminders</a></div>
+              <div class="dropdown-content-flex"><picture><img class="dropdown-icons" src="images/icon-planning.svg" alt=""></picture><a href="">Planning</a></div>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Company <img class="arrow-down" src="images/icon-arrow-down.svg" alt=""> <img class="arrow-up" src="images/icon-arrow-up.svg" alt=""></button>
+          <div class="dropdown-content company">
+            <div class="dropdown-content-flex"><a href="">History</a></div>
+            <div class="dropdown-content-flex"><a href="">Our Team</a></div>
+            <div class="dropdown-content-flex"><a href="">Blog</a></div>
+          </div>
+        </div>
+        <a href="">Careers</a>
+        <a href="">About</a>
+        <span>
+          <a href="">Login</a>
+          <a id="register-btn" href="">Register</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-container">
+
+    <div id="primary-content">
+      <h1 id="title">Make <br>remote work</h1>
+      <h2 id="description">
+        Get your team in sync, no matter your location. <br> Streamline processes,
+        create team rituals, and <br> watch productivity soar.
+      </h2>
+      <button id="learn-more-btn">Learn more</button>
+
+      <div id="clients">
+        <picture><img src="images/client-databiz.svg" alt="databiz-logo"></picture>
+        <picture><img src="images/client-audiophile.svg" alt="audiophile-logo"></picture>
+        <picture><img src="images/client-meet.svg" alt="meet-logo"></picture>
+        <picture><img src="images/client-maker.svg" alt="maker-logo"></picture>
+      </div>
+
+    </div>
+
+    <div id="secondary-content"></div>
+
+  </main>
+  
+</body>
+</html>
